@@ -22,8 +22,8 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/patrickwide/patrickwide254.pythonanywhere.com.git
-   cd patrickwide254.pythonanywhere.com/
+   git clone https://github.com/patrickwide/MyPortfolioWebsite.git
+   cd MyPortfolioWebsite/
    ```
 
 2. Create a virtual environment (venv):
