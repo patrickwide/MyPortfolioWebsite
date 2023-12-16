@@ -1,20 +1,19 @@
 import json
-import pathlib
+import os
 
 def read_json(file_name):
     # Get the absolute path to the JSON file
-    json_file_path = pathlib.Path(file_name).absolute()
+    my_dir = os.path.dirname(__file__)
+    json_file_path = os.path.join(my_dir, file_name)
 
-    # Check if the file exists
-    if json_file_path.exists():
-        # Read data from the JSON file
-        with open(json_file_path, 'r') as file:
-            data = json.load(file)
-        
-        return data
-    else:
-        print(f"The file '{json_file_path}' does not exist.")
+    try:
+        with open(json_file_path, 'r') as f:
+            data = json.load(f)
+        return data # return the Python dictionary
+    except FileNotFoundError:
+        print(f"File '{file_name}' not found.")
         return None
+
 
 # import os
 # from dotenv import load_dotenv
