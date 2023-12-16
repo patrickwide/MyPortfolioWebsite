@@ -1,6 +1,6 @@
 # app.py
 from flask import Flask, render_template, request
-from helpers import read_json
+from helpers import read_json, send_emails
 
 from flask_wtf import FlaskForm
 from flask_wtf.csrf import CSRFProtect
@@ -36,15 +36,18 @@ def process_form():
         email = request.form.get('email')
         message = request.form.get('message')
         # Process data as needed (e.g., send email, save to database)
-        print(name)
-        print(email)
-        print(message)
-    if json_data is not None:
-        return render_template('success.html', data=json_data)
-    else:
-        # Return an error message if the file is not found or returns None
-        return "Error: Unable to retrieve JSON data. Check if the file exists."
-        
+        if json_data is not None:
+            receiver_emails = [email, json_data['contact']['form']['notification_email']['receiver_email']]
+            subjects = [json_data['contact']['form']['confirmation_email']['subject'], json_data['contact']['form']['notification_email']['subject']]
+            notification_body = f"{json_data['contact']['form']['notification_email']['body']}\n\n\nName: {name}\nEmail: {email}\nMessage: {message}"
+            bodies = [json_data['contact']['form']['confirmation_email']['body'], notification_body]
+            send_emails(receiver_emails, subjects, bodies)
+            return render_template('success.html', data=json_data)
+        else:
+            # Return an error message if the file is not found or returns None
+            return "Error: Unable to retrieve JSON data. Check if the file exists."
+    return "Error: This route only supports POST requests."
+
 @app.route('/blogs')
 def read_blog():
     if json_data is not None:

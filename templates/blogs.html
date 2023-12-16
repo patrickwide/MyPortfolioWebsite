@@ -18,17 +18,28 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {% for blog in data['blogs'] %}
           <article
-            class="flex-1 bg-gray-900 text-white rounded-lg overflow-hidden shadow-lg pt-6"
+            class="flex-1 bg-gray-900 text-white rounded-lg overflow-hidden shadow-lg"
+            style="height: 500px"
           >
             <img
               src='{{ blog["image"] }}'
               alt='{{ blog["title"] }}'
               class="rounded-t-lg w-full h-auto mb-2"
             />
-            <div class="p-4">
+            <div class="p-4" style="height: calc(100% - 64px)">
+              <!-- Adjust the height accordingly -->
               <h3 class="text-xl font-bold mb-2">{{ blog["title"] }}</h3>
               <p class="text-gray-400 mb-2">{{ blog["publishedDate"] }}</p>
-              <p class="text-gray-500 overflow-hidden whitespace-normal h-24">
+              <p
+                class="text-gray-500"
+                style="
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 3;
+                  -webkit-box-orient: vertical;
+                "
+              >
                 {{ blog["content"] }}
               </p>
               <a

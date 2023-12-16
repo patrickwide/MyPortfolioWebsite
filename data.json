@@ -26,135 +26,222 @@
     ]
   },
   "aboutMe": {
-    "name": "John Doe",
-    "location": "Cityville",
-    "email": "john.doe@example.com",
-    "linkedin": "linkedin.com/in/johndoe",
+    "name": "Patrick Kiarie",
+    "location": "Nairobi",
+    "email": "patrickwide254@gmail.com",
+    "linkedin": "https://linkedin.com/in/patrickwide",
     "bio": "Passionate software developer with a deep love for coding and problem-solving. Excited about exploring and mastering new technologies, always eager to learn and tackle challenges head-on. Enjoys building elegant and efficient solutions that contribute to the world of software development."
   },
   "projects": [
     {
-      "title": "E-commerce Website",
+      "title": "Ma3 - Matatu Revenue Management System",
       "image": "https://via.placeholder.com/600x400",
-      "description": "Developed a fully functional e-commerce website using the MERN stack...",
-      "technologies": ["MongoDB", "Express.js", "React.js", "Node.js", "Redux"],
-      "role": "Full-stack Developer",
-      "challenges": "Optimizing database queries for improved performance."
+      "description": "Collaborated as a front-end developer on the Ma3 project, a comprehensive web portal created for matatu saccos to streamline and manage their matatu revenue. This initiative was carried out under a contract with Nuri Investment Limited, with a focus on enhancing financial efficiency and transparency within the transportation sector.",
+      "technologies": [
+        "Front-end Development",
+        "Web Portal",
+        "Matatu Saccos",
+        "Financial Efficiency",
+        "Transparency"
+      ],
+      "role": "Front-end Developer",
+      "challenges": "Ensuring user-friendly interface and seamless integration."
     },
     {
-      "title": "Task Management App",
+      "title": "Muranga Smart County - County Management System",
       "image": "https://via.placeholder.com/600x400",
-      "description": "Designed and built a task management application with features like task creation...",
-      "technologies": ["React.js", "Django", "REST API"],
-      "role": "Frontend Developer",
-      "challenges": "Ensuring real-time updates for task status changes."
+      "description": "Engaged as a developer in the ongoing development of the Muranga Smart County project. This initiative involves the creation of a county management system tailored to the specific needs of Muranga County in Kenya. The project is currently in development, with a private GitHub repository ensuring a secure and controlled environment for collaboration.",
+      "technologies": [
+        "County Management System",
+        "Ongoing Development",
+        "GitHub Repository",
+        "Secure Collaboration"
+      ],
+      "role": "Developer",
+      "challenges": "Adapting to the specific needs of Muranga County for effective management."
     },
     {
-      "title": "Portfolio Website",
+      "title": "TuitionSafari - Learning Management Software",
       "image": "https://via.placeholder.com/600x400",
-      "description": "Created a personal portfolio website to showcase projects, skills, and contact information...",
-      "technologies": ["HTML", "CSS", "JavaScript"],
-      "role": "Full-stack Developer",
-      "challenges": "Implementing a clean and user-friendly design."
+      "description": "Conceptualized and initiated TuitionSafari, a personalized learning management software and course hosting platform. Inspired by the Founders Factory Africa Academy, TuitionSafari leverages GPT-4 for an engaging and interactive learning experience. While currently in development, the project is privately hosted on GitHub, allowing for controlled development and future collaboration opportunities.",
+      "technologies": [
+        "Learning Management Software",
+        "Course Hosting Platform",
+        "GPT-4",
+        "Interactive Learning Experience",
+        "Private GitHub Hosting"
+      ],
+      "role": "Initiator and Developer",
+      "challenges": "Implementing advanced AI features for an interactive learning experience."
     }
   ],
   "skills": [
     {
-      "skillName": "React.js",
-      "skillProficiency": "PROFICIENT",
-      "proficiencyPercentage": 60
+      "skillName": "Python",
+      "skillProficiency": "Mastery 🚀",
+      "proficiencyPercentage": 80
     },
     {
-      "skillName": "React.js",
-      "skillProficiency": "PROFICIENT",
+      "skillName": "JavaScript",
+      "skillProficiency": "Expert 🔥",
+      "proficiencyPercentage": 85
+    },
+    {
+      "skillName": "Ruby",
+      "skillProficiency": "Adept 🌟",
+      "proficiencyPercentage": 70
+    },
+    {
+      "skillName": "C",
+      "skillProficiency": "Skilled ⚙️",
+      "proficiencyPercentage": 75
+    },
+    {
+      "skillName": "C#",
+      "skillProficiency": "Craftsman 🛠️",
+      "proficiencyPercentage": 80
+    },
+    {
+      "skillName": "Dart",
+      "skillProficiency": "Versatile 🎭",
+      "proficiencyPercentage": 65
+    },
+    {
+      "skillName": "Flask",
+      "skillProficiency": "Maestro 🎻",
+      "proficiencyPercentage": 85
+    },
+    {
+      "skillName": "Django",
+      "skillProficiency": "Sorcerer 🧙",
+      "proficiencyPercentage": 75
+    },
+    {
+      "skillName": "React",
+      "skillProficiency": "Innovator 💡",
+      "proficiencyPercentage": 80
+    },
+    {
+      "skillName": "Tailwind CSS",
+      "skillProficiency": "Stylist 🎨",
+      "proficiencyPercentage": 70
+    },
+    {
+      "skillName": "PostgreSQL",
+      "skillProficiency": "Database Ninja 💽",
+      "proficiencyPercentage": 85
+    },
+    {
+      "skillName": "MySQL",
+      "skillProficiency": "SQL Maestro 📊",
+      "proficiencyPercentage": 80
+    },
+    {
+      "skillName": "MongoDB",
+      "skillProficiency": "NoSQL Explorer 🌐",
+      "proficiencyPercentage": 75
+    },
+    {
+      "skillName": "SQLite",
+      "skillProficiency": "Lite Magician ✨",
+      "proficiencyPercentage": 70
+    },
+    {
+      "skillName": "HTML",
+      "skillProficiency": "HTML Hero 🦸‍♂️",
+      "proficiencyPercentage": 85
+    },
+    {
+      "skillName": "CSS",
+      "skillProficiency": "CSS Wizard 🧙‍♀️",
+      "proficiencyPercentage": 80
+    },
+    {
+      "skillName": "draw.io",
+      "skillProficiency": "Visualizer 📐",
+      "proficiencyPercentage": 75
+    },
+    {
+      "skillName": "Figma",
+      "skillProficiency": "Design Guru 🎨",
+      "proficiencyPercentage": 70
+    },
+    {
+      "skillName": "Git",
+      "skillProficiency": "Version Control Maestro 🌀",
+      "proficiencyPercentage": 80
+    },
+    {
+      "skillName": "GitHub",
+      "skillProficiency": "Repo Commander 🛡️",
+      "proficiencyPercentage": 75
+    },
+    {
+      "skillName": "Flutter",
+      "skillProficiency": "Flutter Enthusiast 🦋",
+      "proficiencyPercentage": 70
+    },
+    {
+      "skillName": "Problem-solving and Debugging",
+      "skillProficiency": "Puzzle Solver 🧩",
+      "proficiencyPercentage": 75
+    },
+    {
+      "skillName": "Information Gathering",
+      "skillProficiency": "Data Explorer 🌐",
       "proficiencyPercentage": 80
     }
   ],
-  "additionalInformation": "As a developer, I specialize in building robust and scalable web applications using cutting-edge technologies...",
+  "additionalInformation": "As a developer, I specialize in building robust and scalable web applications using cutting-edge technologies. With a passion for clean and efficient code, I thrive on solving complex problems and staying up-to-date with the latest advancements in the ever-evolving tech landscape. My commitment to delivering high-quality software is complemented by a collaborative mindset, ensuring effective communication and seamless teamwork. Beyond coding, I embrace a continuous learning approach, exploring new frameworks and methodologies to enhance my skill set. Let's code a brighter, innovative future together!",
   "blogs": [
     {
-      "title": "Exploring the Latest JavaScript Framework",
-      "image": "https://www.instructure.com/sites/default/files/styles/x_large_hq/public/image/2023-06/AB_test_image_brn_tof_v1_FeatureTabs_Canvas_Laptop-2.png.webp?itok=ZtJPQ_gJ",
-      "publishedDate": "March 15, 2023",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet faucibus arcu. Curabitur sit amet fermentum mauris...",
+      "title": "How to Build a Chatbot with Python and TensorFlow",
+      "image": "https://media.geeksforgeeks.org/wp-content/uploads/20220629202202/intents.png",
+      "publishedDate": "April 10, 2023",
+      "content": "Learn how to use natural language processing and deep learning to create a chatbot that can have a conversation with users. The blog includes a step-by-step tutorial and the source code for the project.",
       "readMoreLink": "https://www.google.com/"
     },
     {
-      "title": "Tips for Efficient Debugging in Python",
-      "image": "https://www.instructure.com/sites/default/files/styles/x_large_hq/public/image/2023-06/AB_test_image_brn_tof_v1_FeatureTabs_Canvas_Laptop-2.png.webp?itok=ZtJPQ_gJ",
-      "publishedDate": "March 10, 2023",
-      "content": "Vestibulum convallis, lacus non varius consectetur, libero turpis pellentesque orci...",
+      "title": "The Rise and Fall of Quibi: A Case Study of Product-Market Fit",
+      "image": "https://i.guim.co.uk/img/media/2331d9ed17a6c32620a60be0a6a6cbf0ec6b34fc/0_0_5000_3102/master/5000.jpg?width=965&dpr=1&s=none",
+      "publishedDate": "April 5, 2023",
+      "content": "Analyze the reasons behind the failure of Quibi, a short-form video streaming service that launched and shut down in 2023. The blog explores the challenges of finding product-market fit, understanding customer needs, and competing with established players.",
       "readMoreLink": "https://www.google.com/"
     },
     {
-      "title": "Exploring the Latest JavaScript Framework",
-      "image": "https://www.instructure.com/sites/default/files/styles/x_large_hq/public/image/2023-06/AB_test_image_brn_tof_v1_FeatureTabs_Canvas_Laptop-2.png.webp?itok=ZtJPQ_gJ",
-      "publishedDate": "March 15, 2023",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet faucibus arcu. Curabitur sit amet fermentum mauris...",
+      "title": "What is WebAssembly and Why Should You Care?",
+      "image": "https://static1.howtogeekimages.com/wordpress/wp-content/uploads/csit/2020/03/5bb8e632.png?q=50&fit=contain&w=1140&h=&dpr=1.5",
+      "publishedDate": "March 25, 2023",
+      "content": "Discover the benefits and limitations of WebAssembly, a new technology that allows you to run compiled code in the browser. The blog explains how WebAssembly works, how it compares to JavaScript, and what are some use cases and examples of WebAssembly applications.",
       "readMoreLink": "https://www.google.com/"
     },
     {
-      "title": "Tips for Efficient Debugging in Python",
-      "image": "https://www.instructure.com/sites/default/files/styles/x_large_hq/public/image/2023-06/AB_test_image_brn_tof_v1_FeatureTabs_Canvas_Laptop-2.png.webp?itok=ZtJPQ_gJ",
-      "publishedDate": "March 10, 2023",
-      "content": "Vestibulum convallis, lacus non varius consectetur, libero turpis pellentesque orci...",
-      "readMoreLink": "https://www.google.com/"
-    },
-    {
-      "title": "Exploring the Latest JavaScript Framework",
-      "image": "https://www.instructure.com/sites/default/files/styles/x_large_hq/public/image/2023-06/AB_test_image_brn_tof_v1_FeatureTabs_Canvas_Laptop-2.png.webp?itok=ZtJPQ_gJ",
-      "publishedDate": "March 15, 2023",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet faucibus arcu. Curabitur sit amet fermentum mauris...",
-      "readMoreLink": "https://www.google.com/"
-    },
-    {
-      "title": "Tips for Efficient Debugging in Python",
-      "image": "https://www.instructure.com/sites/default/files/styles/x_large_hq/public/image/2023-06/AB_test_image_brn_tof_v1_FeatureTabs_Canvas_Laptop-2.png.webp?itok=ZtJPQ_gJ",
-      "publishedDate": "March 10, 2023",
-      "content": "Vestibulum convallis, lacus non varius consectetur, libero turpis pellentesque orci...",
-      "readMoreLink": "https://www.google.com/"
-    },
-    {
-      "title": "Exploring the Latest JavaScript Framework",
-      "image": "https://www.instructure.com/sites/default/files/styles/x_large_hq/public/image/2023-06/AB_test_image_brn_tof_v1_FeatureTabs_Canvas_Laptop-2.png.webp?itok=ZtJPQ_gJ",
-      "publishedDate": "March 15, 2023",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet faucibus arcu. Curabitur sit amet fermentum mauris...",
-      "readMoreLink": "https://www.google.com/"
-    },
-    {
-      "title": "Tips for Efficient Debugging in Python",
-      "image": "https://www.instructure.com/sites/default/files/styles/x_large_hq/public/image/2023-06/AB_test_image_brn_tof_v1_FeatureTabs_Canvas_Laptop-2.png.webp?itok=ZtJPQ_gJ",
-      "publishedDate": "March 10, 2023",
-      "content": "Vestibulum convallis, lacus non varius consectetur, libero turpis pellentesque orci...",
-      "readMoreLink": "https://www.google.com/"
-    },
-    {
-      "title": "Exploring the Latest JavaScript Framework",
-      "image": "https://www.instructure.com/sites/default/files/styles/x_large_hq/public/image/2023-06/AB_test_image_brn_tof_v1_FeatureTabs_Canvas_Laptop-2.png.webp?itok=ZtJPQ_gJ",
-      "publishedDate": "March 15, 2023",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet faucibus arcu. Curabitur sit amet fermentum mauris...",
-      "readMoreLink": "https://www.google.com/"
-    },
-    {
-      "title": "Tips for Efficient Debugging in Python",
-      "image": "https://www.instructure.com/sites/default/files/styles/x_large_hq/public/image/2023-06/AB_test_image_brn_tof_v1_FeatureTabs_Canvas_Laptop-2.png.webp?itok=ZtJPQ_gJ",
-      "publishedDate": "March 10, 2023",
-      "content": "Vestibulum convallis, lacus non varius consectetur, libero turpis pellentesque orci...",
+      "title": "The Future of VR and AR: Trends and Predictions for 2024",
+      "image": "https://imageio.forbes.com/specials-images/imageserve/62629cb4d096f1bc76145ac6/Businesswoman-working-in-office/960x0.jpg?format=jpg&width=1440",
+      "publishedDate": "March 20, 2023",
+      "content": "Get a glimpse of the future of virtual reality and augmented reality, two immersive technologies that are transforming entertainment, education, and business. The blog covers the latest developments, innovations, and challenges in the VR and AR industry, as well as the expected growth and opportunities for 2024.",
       "readMoreLink": "https://www.google.com/"
     }
   ],
   "contact": {
     "form": {
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "message": "Write your message here..."
+      "confirmation_email": {
+        "subject": "Your Contact Request",
+        "body": "Thank you for contacting me! I have received your message and will get back to you as soon as possible."
+      },
+      "notification_email": {
+        "receiver_email": "patrickwide254@gmail.com",
+        "subject": "New Contact Request",
+        "body": "You have received a new contact request from User Name (user@example.com).\n\nMessage:\nThis is the user's message."
+      }
     }
   },
   "footer": {
     "socialMediaLinks": [
-      { "platform": "LinkedIn", "link": "#" },
-      { "platform": "Twitter", "link": "#" }
+      { "platform": "LinkedIn", "link": "https://linkedin.com/in/patrickwide" },
+      { "platform": "Twitter", "link": "https://twitter.com/patrickwide254" },
+      { "platform": "Github", "link": "https://github.com/patrickwide" }
     ],
-    "copyright": "2023 Your Name. All rights reserved."
+    "copyright": "2023 This project is licensed under the MIT License - see the LICENSE.md file for details."
   }
 }
