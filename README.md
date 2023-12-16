@@ -76,7 +76,7 @@ Create a `.env` file in the root directory of your project and add the following
 # Set your email app password in the following format
 EMAIL_PASSWORD=your_email_app_password
 
-# Provide your app email (if applicable)
+# Provide your app email
 APP_EMAIL=your_app_email
 ```
 
