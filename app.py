@@ -18,11 +18,15 @@ csrf = CSRFProtect(app)
 file_path = 'data.json'
 json_data = read_json(file_path)
 
-blogs = 'blogs'
-
 @app.route('/')
 def index():
-    return render_template('index.html', data=json_data)
+    # Check if data is retrieved successfully
+    if json_data is not None:
+        # Render the template with the JSON data
+        return render_template('index.html', data=json_data)
+    else:
+        # Return an error message if the file is not found or returns None
+        return "Error: Unable to retrieve JSON data. Check if the file exists."
 
 @app.route('/contact', methods=['GET', 'POST'])
 def process_form():
@@ -35,14 +39,20 @@ def process_form():
         print(name)
         print(email)
         print(message)
-
-    return render_template('success.html', data=json_data)
-
-
+    if json_data is not None:
+        return render_template('success.html', data=json_data)
+    else:
+        # Return an error message if the file is not found or returns None
+        return "Error: Unable to retrieve JSON data. Check if the file exists."
+        
 @app.route('/blogs')
 def read_blog():
-    return render_template('blogs.html', data=json_data)
+    if json_data is not None:
+        return render_template('blogs.html', data=json_data)
+    else:
+        # Return an error message if the file is not found or returns None
+        return "Error: Unable to retrieve JSON data. Check if the file exists."
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    app.run(debug=True, port=5002)

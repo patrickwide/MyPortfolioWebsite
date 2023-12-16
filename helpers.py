@@ -1,16 +1,19 @@
 import json
-import os
+import pathlib
 
-def read_json(file_path):
+def read_json(file_name):
+    # Get the absolute path to the JSON file
+    json_file_path = pathlib.Path(file_name).absolute()
+
     # Check if the file exists
-    if os.path.exists(file_path):
+    if json_file_path.exists():
         # Read data from the JSON file
-        with open(file_path, 'r') as file:
+        with open(json_file_path, 'r') as file:
             data = json.load(file)
         
         return data
     else:
-        print(f"The file '{file_path}' does not exist.")
+        print(f"The file '{json_file_path}' does not exist.")
         return None
 
 # import os
