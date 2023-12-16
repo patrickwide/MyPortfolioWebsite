@@ -78,9 +78,6 @@ EMAIL_PASSWORD=your_email_app_password
 
 # Provide your app email (if applicable)
 APP_EMAIL=your_app_email
-
-# Specify your personal email for receiving contact form submissions
-YOUR_EMAIL=your_personal_email@example.com
 ```
 
 ## 🚀 How to Use
