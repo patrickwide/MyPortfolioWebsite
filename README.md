@@ -1,14 +1,14 @@
-# Portfolio Website with Flask and Tailwind CSS
+# 🚀 Portfolio Website with Flask and Tailwind CSS
 
 This project is a simple portfolio website built using Flask, a Python web framework, and Tailwind CSS for styling. The website is designed to be easily customizable by anyone who wants to showcase their portfolio. It uses a simple JSON file to store user data, making it easy to host and run as a normal Flask application.
 
-## Features
+## ✨ Features
 
 - **Homepage**: Display your portfolio items on the homepage.
 - **Contact Page**: Allow visitors to contact you through a form.
 - **Blogs Page**: Showcase your blogs.
 
-## Prerequisites
+## 🛠️ Prerequisites
 
 Make sure you have the following installed:
 
@@ -17,22 +17,42 @@ Make sure you have the following installed:
 - Flask-WTF
 - Tailwind CSS
 
-## Getting Started
+## 🏁 Getting Started
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/patrickwide/MyPortfolioWebsite.git
-   cd MyPortfolioWebsite/
+   git clone https://github.com/patrickwide/patrickwide254.pythonanywhere.com.git
+   cd patrickwide254.pythonanywhere.com/
    ```
 
-2. Install the required dependencies:
+2. Create a virtual environment (venv):
+
+   ```bash
+   python -m venv venv
+   ```
+
+3. Activate the virtual environment:
+
+   - On Windows:
+
+     ```bash
+     .\venv\Scripts\activate
+     ```
+
+   - On Unix or MacOS:
+
+     ```bash
+     source venv/bin/activate
+     ```
+
+4. Install the required dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Run the application:
+5. Run the application:
 
    ```bash
    python app.py
@@ -40,13 +60,13 @@ Make sure you have the following installed:
 
    The application will be accessible at `http://localhost:5001` by default.
 
-# Configuration
+# ⚙️ Configuration
 
 - Update the `data.json` file with your own information.
 - Customize the templates in the `templates` folder to match your style.
 - Set up your email app password to enable the contact form functionality.
 
-## Environment Variables
+## 🌐 Environment Variables
 
 Create a `.env` file in the root directory of your project and add the following variables in the specified format:
 
@@ -63,16 +83,16 @@ APP_EMAIL=your_app_email
 YOUR_EMAIL=your_personal_email@example.com
 ```
 
-## How to Use
+## 🚀 How to Use
 
 - Access the homepage at `/` to view your portfolio.
 - Visit the contact page at `/contact` to allow visitors to contact you.
 - Check out your blogs at `/blogs`.
 
-## Contributing
+## 🤝 Contributing
 
 Feel free to contribute by opening issues or creating pull requests. Your feedback and improvements are welcome!
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
