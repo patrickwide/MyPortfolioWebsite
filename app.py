@@ -1,7 +1,6 @@
 # app.py
-from flask import Flask, abort, render_template, request
-import markdown
-from helpers import read_json, read_markdown_file
+from flask import Flask, render_template, request
+from helpers import read_json
 
 from flask_wtf import FlaskForm
 from flask_wtf.csrf import CSRFProtect
