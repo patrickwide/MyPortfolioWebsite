@@ -1,20 +1,15 @@
-<!--  -->
-{% extends 'base.html' %}
+<!-- error.html -->
+{% extends 'base.html' %} {% block title %}Error - PatrickWide{% endblock %} {%
+block content %}
 
-<!--  -->
-{% block title %}Success - PatrickWide{% endblock %}
-
-<!--  -->
-{% block content %}
-
-<!-- Success Section -->
-<section class="container mx-auto mt-8 px-2" id="success">
+<!-- Error Section -->
+<section class="container mx-auto mt-8 px-2" id="error">
   <div class="flex justify-center items-center flex-col">
-    <!-- Success Card -->
+    <!-- Error Card -->
     <div
-      class="bg-green-500 rounded-lg shadow-lg p-6 w-full md:w-2/3 text-center"
+      class="bg-red-500 rounded-lg shadow-lg p-6 w-full md:w-2/3 text-center"
     >
-      <!-- Success Icon -->
+      <!-- Error Icon -->
       <svg
         class="w-16 h-16 mx-auto mb-4 text-white"
         fill="currentColor"
@@ -27,8 +22,8 @@
         ></path>
       </svg>
 
-      <!-- Success Message -->
-      <h2 class="text-3xl font-bold mb-2">{{ success_message }}</h2>
+      <!-- Error Message -->
+      <h2 class="text-3xl font-bold mb-2">{{ error_message }}</h2>
 
       <!-- Return Home Button -->
       <a href="/" class="text-blue-500 hover:underline">Back to Home</a>
@@ -36,5 +31,4 @@
   </div>
 </section>
 
-<!--  -->
 {% endblock %}

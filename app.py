@@ -35,17 +35,30 @@ def process_form():
         name = request.form.get('name')
         email = request.form.get('email')
         message = request.form.get('message')
-        # Process data as needed (e.g., send email, save to database)
-        if json_data is not None:
+
+        # Assuming json_data is loaded from a JSON file
+        try:
+            # Load your JSON data here
+            # json_data = ...
+
             receiver_emails = [email, json_data['contact']['form']['notification_email']['receiver_email']]
             subjects = [json_data['contact']['form']['confirmation_email']['subject'], json_data['contact']['form']['notification_email']['subject']]
+            
             notification_body = f"{json_data['contact']['form']['notification_email']['body']}\n\n\nName: {name}\nEmail: {email}\nMessage: {message}"
             bodies = [json_data['contact']['form']['confirmation_email']['body'], notification_body]
-            send_emails(receiver_emails, subjects, bodies)
-            return render_template('success.html', data=json_data)
-        else:
-            # Return an error message if the file is not found or returns None
-            return "Error: Unable to retrieve JSON data. Check if the file exists."
+
+            # Attempt to send emails
+            if send_emails(receiver_emails, subjects, bodies):
+                success_message = "Success: Your email has been sent successfully. Thank you for contacting us!"
+                return render_template('success.html', data=json_data, success_message=success_message)
+            else:
+                # If sending emails fails, provide an error message
+                error_message = f"Error: Unable to send emails. Please try again later or contact us directly at {json_data['contact']['form']['notification_email']['subject']}"
+                return render_template('error.html', error_message=error_message)
+        except Exception as e:
+            # Handle exceptions related to JSON loading or any other unexpected issues
+            return f"Error: {str(e)}"
+    
     return "Error: This route only supports POST requests."
 
 @app.route('/blogs')
