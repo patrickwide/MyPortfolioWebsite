@@ -1,0 +1,289 @@
+<!--  -->
+{% extends 'base.html' %} {% block title %}Home - PatrickWide{% endblock %}
+
+<!--  -->
+{% block content %}
+
+<!-- Include Header -->
+{% include 'header.html' %}
+
+<!-- About Me Profile Section -->
+<section class="container mx-auto mt-8 px-2" id="aboutMe">
+  <div class="flex justify-center items-center flex-col">
+    <!-- Profile Card -->
+    <div
+      class="bg-gray-800 rounded-lg shadow-lg p-6 w-full md:w-2/3 text-center"
+    >
+      <!-- Profile Image -->
+      <img
+        src="https://raw.githubusercontent.com/react-icons/react-icons/master/react-icons.svg"
+        alt="Your Profile"
+        class="rounded-full mx-auto mb-4"
+        style="width: 150px; height: 150px; object-fit: cover"
+      />
+
+      <!-- Personal Details -->
+      <div class="mb-4">
+        <h2 class="text-3xl font-bold mb-2 text-white">About Me</h2>
+        <!-- Personal Details -->
+        <div class="mb-4 text-gray-400 text-center">
+          <p class="flex flex-wrap justify-center">
+            <span class="info-tag">Name:</span>
+            <span class="info-value mr-2">{{ data['aboutMe']['name'] }}, </span
+            ><br />
+
+            <span class="info-tag">Location:</span>
+            <span class="info-value mr-2"
+              >{{ data['aboutMe']['location'] }}, </span
+            ><br />
+
+            <span class="info-tag">Email:</span>
+            <span class="info-value mr-2">{{ data['aboutMe']['email'] }}, </span
+            ><br />
+
+            <span class="info-tag">LinkedIn:</span>
+            <span class="info-value mr-2"
+              >{{ data['aboutMe']['linkedin'] }}</span
+            ><br />
+          </p>
+        </div>
+
+        <!-- Bio -->
+        <div class="text-gray-400 text-center">
+          <p>
+            <span class="text-xl font-bold">Bio</span><br />
+            {{ data['aboutMe']['bio'] }}
+          </p>
+        </div>
+      </div>
+
+      <!-- Hire Me Button -->
+      <div class="mb-4">
+        <button
+          id="hireMeBtn2"
+          class="bg-blue-500 text-white py-2 px-4 rounded-full transition duration-300 hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
+        >
+          Hire Me
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="container mx-auto mt-8 px-2" id="myProjects">
+  <div class="flex justify-center">
+    <div class="w-full md:w-2/3">
+      <h2 class="text-3xl font-bold mb-4 text-white">My Projects</h2>
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+        {% for project in data['projects'] %}
+        <!-- Project 1 -->
+        <div class="mb-6 flex flex-col md:flex-row items-center">
+          <img
+            src="{{ project['image'] }}"
+            alt="Project 1"
+            class="mb-4 md:mb-0 mr-0 md:mr-4 rounded-md"
+            style="max-width: 180px; max-height: 180px"
+          />
+          <div>
+            <h3 class="text-xl font-semibold mb-2 text-white">
+              {{ project['title'] }}
+            </h3>
+            <p class="text-gray-400">
+              Developed a fully functional e-commerce website using the MERN
+              stack (MongoDB, Express.js, React.js, Node.js). Implemented
+              features such as user authentication, product catalog, and
+              shopping cart functionality.
+            </p>
+            <p class="text-gray-400 mt-2">
+              <span class="font-semibold">Technologies:</span> MongoDB,
+              Express.js, React.js, Node.js, Redux
+            </p>
+            <p class="text-gray-400">
+              <span class="font-semibold">Role:</span> Full-stack Developer
+            </p>
+            <p class="text-gray-400">
+              <span class="font-semibold">Challenges:</span> Optimizing database
+              queries for improved performance.
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="container mx-auto mt-8 px-2" id="mySkills">
+  <div class="flex justify-center">
+    <div class="w-full md:w-2/3">
+      <h2 class="text-3xl font-bold mb-4 text-white">My Skills</h2>
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+        <!-- List of Skills with Progress Bars -->
+        <ul class="list-disc pl-6 text-gray-400 space-y-4">
+          {% for skill in data['skills'] %}
+          <li>
+            <span class="font-semibold text-lg">{{ skill["skillName"] }}</span>
+            <div class="mt-2 relative pt-1">
+              <div class="flex mb-2 items-center justify-between">
+                <div>
+                  <span
+                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200"
+                  >
+                    {{ skill["skillProficiency"] }}
+                  </span>
+                </div>
+                <div class="text-right">
+                  <span
+                    class="text-xs font-semibold inline-block text-blue-600"
+                  >
+                    {{ skill["proficiencyPercentage"] }}%
+                  </span>
+                </div>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4">
+                <div
+                  class="bg-blue-600 h-1.5 rounded-full"
+                  style='width: {{ skill["proficiencyPercentage"] }}%'
+                ></div>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <!-- Additional Information for Employers -->
+        <p class="mt-6 text-gray-500 leading-relaxed">
+          {{ data['additionalInformation'] }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Section -->
+<section class="container mx-auto mt-8 px-2" id="myBlogs">
+  <div class="flex justify-center">
+    <div class="w-full md:w-2/3">
+      <h2 class="text-3xl font-bold mb-4 text-white">My Blogs</h2>
+
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+        <!-- Blog Posts -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {% set max_blogs = 6 %} {% for blog in data['blogs'][:max_blogs] %}
+          <article class="flex-1">
+            <img
+              src='{{ blog["image"] }}'
+              alt='{{ blog["title"] }}'
+              class="rounded-lg w-full h-auto mb-2"
+            />
+            <h3 class="text-xl font-bold mb-2">{{ blog["title"] }}</h3>
+            <p class="text-gray-400 mb-2">{{ blog["publishedDate"] }}</p>
+            <p class="text-gray-500">{{ blog["content"] }}</p>
+            <a
+              href='{{ blog["readMoreLink"] }}'
+              class="text-blue-500 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read More</a
+            >
+          </article>
+          {% endfor %}
+        </div>
+
+        <!-- View More Button -->
+        {% if data['blogs']|length > max_blogs %}
+        <div class="text-center mt-4">
+          <a
+            href="/blogs"
+            class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none"
+          >
+            View More
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="container mx-auto mt-8 px-2" id="contactMe">
+  <div class="flex justify-center">
+    <div class="w-full md:w-2/3">
+      <h2 class="text-3xl font-bold mb-4 text-white">Contact Me</h2>
+
+      <div class="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col">
+        <!-- Contact Form -->
+        <form action="{{ url_for('process_form') }}" method="post" class="">
+          <!-- Name and Email Fields in a Row -->
+          <div class="flex flex-wrap -mx-2">
+            <div class="w-1/2 px-2 mb-4">
+              <label
+                for="name"
+                class="block text-gray-400 text-sm font-semibold mb-2"
+                >Your Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full px-4 py-2 bg-gray-700 rounded-md border border-gray-600 focus:outline-none focus:border-blue-500 text-white"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div class="w-1/2 px-2 mb-4">
+              <label
+                for="email"
+                class="block text-gray-400 text-sm font-semibold mb-2"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-4 py-2 bg-gray-700 rounded-md border border-gray-600 focus:outline-none focus:border-blue-500 text-white"
+                placeholder="john.doe@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Message Field -->
+          <div class="mb-4">
+            <label
+              for="message"
+              class="block text-gray-400 text-sm font-semibold mb-2"
+              >Your Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full px-4 py-2 bg-gray-700 rounded-md border border-gray-600 focus:outline-none focus:border-blue-500 text-white"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+
+          <!-- Send Button -->
+          <button
+            type="submit"
+            class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Include Footer -->
+{% include 'footer.html' %}
+
+<!--  -->
+{% endblock %}

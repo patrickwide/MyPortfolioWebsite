@@ -1,0 +1,40 @@
+<!--  -->
+{% extends 'base.html' %}
+
+<!--  -->
+{% block title %}Success - PatrickWide{% endblock %}
+
+<!--  -->
+{% block content %}
+
+<!-- Success Section -->
+<section class="container mx-auto mt-8 px-2" id="success">
+  <div class="flex justify-center items-center flex-col">
+    <!-- Success Card -->
+    <div
+      class="bg-green-500 rounded-lg shadow-lg p-6 w-full md:w-2/3 text-center"
+    >
+      <!-- Success Icon -->
+      <svg
+        class="w-16 h-16 mx-auto mb-4 text-white"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 0C4.47 0 0 4.47 0 10s4.47 10 10 10 10-4.47 10-10S15.53 0 10 0zm4.47 7.47l-7.06 7.06-3.47-3.47a1 1 0 1 0-1.41 1.41l4 4a1 1 0 0 0 1.41 0l8-8a1 1 0 1 0-1.41-1.41z"
+        ></path>
+      </svg>
+
+      <!-- Success Message -->
+      <h2 class="text-3xl font-bold mb-2">Message Sent Successfully!</h2>
+
+      <!-- Return Home Button -->
+      <a href="/" class="text-blue-500 hover:underline">Back to Home</a>
+    </div>
+  </div>
+</section>
+
+<!--  -->
+{% endblock %}
